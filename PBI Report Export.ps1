@@ -1,7 +1,7 @@
 # Set Parameters
 
 # Set Sharepoint paths
-$WebURL = "https://suncor.sharepoint.com/sites/PowerBISupportgroup/"
+$WebURL = "https://abc.sharepoint.com/sites/SiteName/"
 $rootFolder = "Shared Documents"
 
 # Add the current date and time to the log entry
@@ -58,7 +58,7 @@ Foreach ($i in $reports) {
     # Write-Host "$workspaceId/$workspaceName" -f Green-- printing the workspaceID and Name
 
     # Add C1.Shovan Mandal as Admin of the Workspaces
-    Add-PowerBIWorkspaceUser -Scope Organization -Id $workspaceId -UserEmailAddress c1.shmandal@suncor.onmicrosoft.com -AccessRight Admin
+    Add-PowerBIWorkspaceUser -Scope Organization -Id $workspaceId -UserEmailAddress youremail@address.com -AccessRight Admin
 
     # Get the report
     $report = Get-PowerBIReport -Id $ReportID -WorkspaceId $WorkspaceID
