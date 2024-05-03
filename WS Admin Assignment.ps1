@@ -13,6 +13,6 @@ Foreach ($i in $workspace) {
     $Workspace = Get-PowerBIWorkspace -Scope Organization -Name $WorkspaceName
     $workspaceId = $Workspace.id
     Write-Host "$workspaceName-$workspaceId"
-    Add-PowerBIWorkspaceUser -Scope Organization -Id $workspaceId -UserEmailAddress shmandal@suncor.com -AccessRight Admin
+    Add-PowerBIWorkspaceUser -Scope Organization -Id $workspaceId -UserEmailAddress youremail@address.com -AccessRight Admin
     
     }
