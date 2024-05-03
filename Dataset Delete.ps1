@@ -39,7 +39,7 @@ Foreach ($i in $data) {
     $Workspace = Get-PowerBIWorkspace -Scope Organization -Name $WorkspaceName
     $workspaceId = $Workspace.id
     Write-Host "$workspaceName-$workspaceId"
-    Add-PowerBIWorkspaceUser -Scope Organization -Id $workspaceId -UserEmailAddress c1.shmandal@suncor.onmicrosoft.com -AccessRight Admin
+    Add-PowerBIWorkspaceUser -Scope Organization -Id $workspaceId -UserEmailAddress youremail@address.com -AccessRight Admin
 
     # Get the report
     $dataset = Get-PowerBIDataset -Name $DatasetName -Workspace $Workspace
