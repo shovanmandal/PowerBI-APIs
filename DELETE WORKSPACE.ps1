@@ -35,7 +35,7 @@ Foreach ($i in $data) {
         # Worksapce Id
         $workspaceId = $Workspace.id
         Write-Host "$workspaceName-$workspaceId" -f Green
-        Add-PowerBIWorkspaceUser -Scope Organization -Id $workspaceId -UserEmailAddress c1.shmandal@suncor.onmicrosoft.com -AccessRight Admin
+        Add-PowerBIWorkspaceUser -Scope Organization -Id $workspaceId -UserEmailAddress youremail@address.com -AccessRight Admin
         $WorksapceURL = 'groups/' + $workspaceId
         $ErrorActionPreference = 'SilentlyContinue'
         Invoke-PowerBIRestMethod -Url $WorksapceURL -Method Delete
